@@ -4,3 +4,22 @@ body {
     "돋움", Helvetica, AppleSDGothicNeo, sans-serif;
   font-size: 2.7778vw;
 }
+h2,
+.h2 {
+}
+h3,
+.h3 {
+  @include title(h3);
+}
+h4,
+.h4 {
+  @include title(h4);
+}
+h5,
+.h5 {
+  @include title(h5);
+}
+h6,
+.h6 {
+  @include title(p1, 700);
+}

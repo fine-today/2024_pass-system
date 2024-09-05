@@ -1,23 +1,19 @@
 <template>
   <div>
-    Guide
-    <br />
-    <br />&nbsp;&nbsp;&nbsp;
-    <PsButton type="primary" size="small"
-      ><template #f-icon>
-        <DownloadOutlined />
-      </template>
-      Primary Button
-      <template #b-icon>
-        <DownloadOutlined />
-      </template>
-    </PsButton>
+    <h3>Tags</h3>
+    <GuideTags />
+    <h3>Buttons</h3>
+    <GuideButtons />
   </div>
 </template>
 
 <script setup>
-import { DownloadOutlined } from "@ant-design/icons-vue";
-import PsButton from "./../../components/PsButton.vue";
+import GuideButtons from "./GuideButtons.vue";
+import GuideTags from "./GuideTags.vue";
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+h4 {
+  margin: 2rem 0;
+}
+</style>

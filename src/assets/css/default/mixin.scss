@@ -44,17 +44,17 @@
 
 // font
 @mixin title($size: p3, $weight: 400) {
-  @if ($size == h1) {
+  @if ($size == h3) {
     font-size: 2.6rem;
     letter-spacing: -0.04em;
     line-height: 3.8rem;
     font-weight: $weight;
-  } @else if($size == h2) {
+  } @else if($size == h4) {
     font-size: 2.2rem;
     letter-spacing: -0.04em;
     line-height: 3.2rem;
     font-weight: $weight;
-  } @else if($size == h3) {
+  } @else if($size == h5) {
     font-size: 1.8rem;
     letter-spacing: -0.04em;
     line-height: 2.6rem;
@@ -88,7 +88,7 @@
 }
 
 // bg
-@mixin bg_img($size: null, $url: null) {
+@mixin imgBg($size: null, $url: null) {
   background-image: url($url);
   background-position: center center;
   background-size: $size;
@@ -96,18 +96,25 @@
 }
 $colors: (
   type1: (
-    black: #000,
-    gray_f4: #f4f4f4,
-    gray_9: #999,
-    gray_fe: #fefefe,
+    black: #222,
+    white: #fff,
+    secondary: #f0f2f4,
+    tertiary: #3c3c3c,
+    gray-400: #a7a7a7,
+    gray-700: #666666,
+    gray-050: #f0f2f4,
   ),
   dark: (
     black: #fff,
-    gray_f4: #333,
+    white: #222,
+    secondary: #333,
+    tertiary: #3c3c3c,
+    gray-400: #a7a7a7,
+    gray-050: #f0f2f4,
   ),
 );
 
-@function set_color($key, $type: "type1") {
+@function setColor($key, $type: "type1") {
   @each $name, $color in map-get($colors, $type) {
     @if ($key == $name) {
       @return $color;
@@ -116,9 +123,9 @@ $colors: (
 }
 
 @mixin color($property, $color, $important: false) {
-  #{$property}: set_color($color) #{if($important, "!important", "")};
+  #{$property}: setColor($color) #{if($important, "!important", "")};
   @at-root body.dark & {
-    #{$property}: set_color($color, dark) #{if($important, "!important", "")};
+    #{$property}: setColor($color, dark) #{if($important, "!important", "")};
   }
 }
 
