@@ -4,237 +4,148 @@
     <a-row :gutter="[12, 12]">
       <!-- primary-->
       <a-col :span="12">
-        <PsButton type="primary" size="large"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="large"
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="primary" size="large" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- secondary -->
-      <a-col :span="12">
-        <PsButton type="secondary" size="large"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="large" disabled
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="secondary" size="large" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- border -->
-      <a-col :span="12">
-        <PsButton type="border" size="large"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="large"
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="border" size="large" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- default -->
-      <a-col :span="12">
-        <PsButton size="large"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="large" disabled
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton size="large" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- text -->
-      <a-col :span="12">
-        <PsButton type="text" size="large"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="large"
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="text" size="large" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="large" disabled
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="large"
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="large" disabled
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="large"
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="large" disabled
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
     </a-row>
 
-    <h4>Large-bold / Large-bold Disabled</h4>
     <a-row :gutter="[12, 12]">
       <!-- primary-->
       <a-col :span="12">
-        <PsButton type="primary" size="large" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="large" data-bold
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="primary" size="large" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- secondary -->
-      <a-col :span="12">
-        <PsButton type="secondary" size="large" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="large" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="secondary" size="large" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- border -->
-      <a-col :span="12">
-        <PsButton type="border" size="large" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="large" data-bold
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="border" size="large" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- default -->
-      <a-col :span="12">
-        <PsButton size="large" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="large" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton size="large" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- text -->
-      <a-col :span="12">
-        <PsButton type="text" size="large" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="large" data-bold
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="text" size="large" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="large" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="large" data-bold
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="large" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="large" data-bold
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="large" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
     </a-row>
 
@@ -242,237 +153,148 @@
     <a-row :gutter="[12, 12]">
       <!-- primary-->
       <a-col :span="12">
-        <PsButton type="primary"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary"
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="primary" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- secondary -->
-      <a-col :span="12">
-        <PsButton type="secondary"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" disabled
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="secondary" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- border -->
-      <a-col :span="12">
-        <PsButton type="border"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary"
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="border" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- default -->
-      <a-col :span="12">
-        <PsButton
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" disabled
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- text -->
-      <a-col :span="12">
-        <PsButton type="text"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border"
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="text" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" disabled
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button disabled
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text"
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" disabled
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
     </a-row>
 
-    <h4>Medium-bold / Medium-bold Disabled</h4>
     <a-row :gutter="[12, 12]">
       <!-- primary-->
       <a-col :span="12">
-        <PsButton type="primary" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" data-bold
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="primary" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- secondary -->
-      <a-col :span="12">
-        <PsButton type="secondary" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="secondary" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- border -->
-      <a-col :span="12">
-        <PsButton type="border" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" data-bold
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="border" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- default -->
-      <a-col :span="12">
-        <PsButton bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- text -->
-      <a-col :span="12">
-        <PsButton type="text" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" data-bold
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="text" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button data-bold
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" data-bold
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
     </a-row>
 
@@ -480,237 +302,148 @@
     <a-row :gutter="[12, 12]">
       <!-- primary-->
       <a-col :span="12">
-        <PsButton type="primary" size="small"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="small"
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="primary" size="small" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- secondary -->
-      <a-col :span="12">
-        <PsButton type="secondary" size="small"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="small" disabled
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="secondary" size="small" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- border -->
-      <a-col :span="12">
-        <PsButton type="border" size="small"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="small"
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="border" size="small" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- default -->
-      <a-col :span="12">
-        <PsButton size="small"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="small" disabled
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton size="small" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- text -->
-      <a-col :span="12">
-        <PsButton type="text" size="small"
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="small"
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="text" size="small" disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="small" disabled
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="small"
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="small" disabled
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="small"
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="small" disabled
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
     </a-row>
 
-    <h4>Small-bold / Small-bold Disabled</h4>
     <a-row :gutter="[12, 12]">
       <!-- primary-->
       <a-col :span="12">
-        <PsButton type="primary" size="small" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="small" data-bold
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="primary" size="small" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Primary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- secondary -->
-      <a-col :span="12">
-        <PsButton type="secondary" size="small" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="primary" size="small" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Primary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="secondary" size="small" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          Secondary
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- border -->
-      <a-col :span="12">
-        <PsButton type="border" size="small" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="small" data-bold
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="border" size="small" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          border
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- default -->
-      <a-col :span="12">
-        <PsButton size="small" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="secondary" size="small" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Secondary<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton size="small" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          default
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
-      </a-col>
-      <!-- text -->
-      <a-col :span="12">
-        <PsButton type="text" size="small" bold
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="small" data-bold
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
       <a-col :span="12">
-        <PsButton type="text" size="small" bold disabled
-          ><template #f-icon>
-            <DownloadOutlined />
-          </template>
-          text
-          <template #b-icon>
-            <DownloadOutlined />
-          </template>
-        </PsButton>
+        <a-button type="border" size="small" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Border<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="small" data-bold
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button size="small" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Default<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="small" data-bold
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
+      </a-col>
+      <a-col :span="12">
+        <a-button type="text" size="small" data-bold disabled
+          ><DownloadOutlined class="f-icon" /> Text<DownloadOutlined
+            class="b-icon"
+          />
+        </a-button>
       </a-col>
     </a-row>
   </div>
@@ -718,5 +451,4 @@
 
 <script setup>
 import { DownloadOutlined } from "@ant-design/icons-vue";
-import PsButton from "./../../components/PsButton.vue";
 </script>

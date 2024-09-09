@@ -24,6 +24,11 @@
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(1px);
 }
+@mixin shadow($depth: 1) {
+  @if ($depth == 1) {
+    box-shadow: 0 0.1rem rgba(0, 0, 0, 0.25);
+  }
+}
 
 @mixin ellipsis($line: 1) {
   overflow: hidden;
@@ -40,6 +45,11 @@
 @mixin flexbox {
   display: flex;
   align-items: center;
+}
+
+@mixin bodySpace {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 // font
@@ -100,17 +110,28 @@ $colors: (
     white: #fff,
     secondary: #f0f2f4,
     tertiary: #3c3c3c,
+    gray-100: #eaebef,
+    gray-300: #c5c5c5,
     gray-400: #a7a7a7,
+    gray-600: #7a7a7a,
     gray-700: #666666,
     gray-050: #f0f2f4,
+    red-500: #ff3a4a,
+    purple: #6250fe,
   ),
   dark: (
     black: #fff,
     white: #222,
     secondary: #333,
     tertiary: #3c3c3c,
+    gray-100: #eaebef,
+    gray-300: #c5c5c5,
     gray-400: #a7a7a7,
+    gray-600: #7a7a7a,
+    gray-700: #666666,
     gray-050: #f0f2f4,
+    red-500: #ff3a4a,
+    purple: #6250fe,
   ),
 );
 

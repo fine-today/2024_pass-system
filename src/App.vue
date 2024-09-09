@@ -2,11 +2,10 @@
   <a-config-provider
     :theme="{
       token: {
-        colorPrimary: '#222',
+        colorPrimary: '#222', // antd theme primary color 변경
       },
     }"
-  >
-    <router-view />
+    ><router-view />
   </a-config-provider>
 </template>
 

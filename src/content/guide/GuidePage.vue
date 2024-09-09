@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="guide">
     <h3>Tags</h3>
     <GuideTags />
     <h3>Buttons</h3>
@@ -13,7 +13,12 @@ import GuideTags from "./GuideTags.vue";
 </script>
 
 <style lang="scss">
-h4 {
-  margin: 2rem 0;
+.guide {
+  h3 {
+    margin: 1rem 0;
+  }
+  h4 {
+    margin: 1rem 0;
+  }
 }
 </style>
