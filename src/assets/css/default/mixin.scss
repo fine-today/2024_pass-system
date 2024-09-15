@@ -150,6 +150,11 @@ $colors: (
   }
 }
 
+@mixin shadow($type: 1) {
+  @if ($type == 1) {
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
+  }
+}
 section {
   @include color(background-color, black);
 }

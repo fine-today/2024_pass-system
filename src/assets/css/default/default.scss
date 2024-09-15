@@ -91,6 +91,12 @@ h6,
   }
 }
 
+@for $i from 0 through 20 {
+  .w#{$i*5}p {
+    width: 5% * $i;
+  }
+}
+
 //align
 .align-left {
   text-align: left;
@@ -104,4 +110,8 @@ h6,
 
 .underline {
   text-decoration: underline;
+}
+
+.em-red {
+  @include color(color, red-500);
 }

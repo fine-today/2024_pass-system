@@ -1,55 +1,52 @@
 <template>
-  <BaseLayout>
-    <template #default>
-      <ConBox class="box1 padding-t-16 padding-b-16" bordered="bottom">
-        <h3 class="h6">
-          내위치지키미 서비스를<br />
-          이용해 보세요.
-        </h3>
-        <p class="p2">서비스 사용을 위하여 약관에 동의해 주세요</p>
-      </ConBox>
+  <div>
+    <ConBox class="box1 padding-t-16 padding-b-16" bordered="bottom">
+      <h3 class="h6">
+        내위치지키미 서비스를<br />
+        이용해 보세요.
+      </h3>
+      <p class="p2">서비스 사용을 위하여 약관에 동의해 주세요</p>
+    </ConBox>
 
-      <ConBox class="box2">
-        <h3 class="padding-t-8 padding-b-16">
-          <a-checkbox v-model:checked="checked" class="p1 round"
-            >서비스 필수 항목 모두 동의</a-checkbox
+    <ConBox class="box2">
+      <h3 class="padding-t-8 padding-b-16">
+        <a-checkbox v-model:checked="checked" class="p1 round"
+          >서비스 필수 항목 모두 동의</a-checkbox
+        >
+      </h3>
+      <ul class="agree-list">
+        <li>
+          <a-checkbox v-model:checked="checked" class="p2"
+            >(필수) 서비스 이용약관</a-checkbox
           >
-        </h3>
-        <ul class="agree-list">
-          <li>
-            <a-checkbox v-model:checked="checked" class="p2"
-              >(필수) 서비스 이용약관</a-checkbox
-            >
-            <button type="button" class="agree-more">보기</button>
-          </li>
-          <li>
-            <a-checkbox v-model:checked="checked" class="p2"
-              >(필수) 개인정보 수집 및 이용 동의</a-checkbox
-            >
-            <button type="button" class="agree-more">보기</button>
-          </li>
-          <li>
-            <a-checkbox v-model:checked="checked" class="p2"
-              >(필수) 위치기반 서비스 이용 약관</a-checkbox
-            >
-            <button type="button" class="agree-more">보기</button>
-          </li>
-        </ul>
-      </ConBox>
-    </template>
-    <template #footer>
-      <BtnList>
-        <a-button type="border" size="large">취소</a-button>
-        <a-button type="primary" size="large">가입</a-button>
-      </BtnList>
-    </template>
-  </BaseLayout>
+          <button type="button" class="agree-more">보기</button>
+        </li>
+        <li>
+          <a-checkbox v-model:checked="checked" class="p2"
+            >(필수) 개인정보 수집 및 이용 동의</a-checkbox
+          >
+          <button type="button" class="agree-more">보기</button>
+        </li>
+        <li>
+          <a-checkbox v-model:checked="checked" class="p2"
+            >(필수) 위치기반 서비스 이용 약관</a-checkbox
+          >
+          <button type="button" class="agree-more">보기</button>
+        </li>
+      </ul>
+    </ConBox>
+  </div>
+  <!--<template #footer>
+    <BtnList>
+      <a-button type="border" size="large">취소</a-button>
+      <a-button type="primary" size="large">가입</a-button>
+    </BtnList>
+  </template>-->
 </template>
 
 <script setup>
-import BtnList from "@/components/BtnList.vue";
+//import BtnList from "@/components/BtnList.vue";
 import ConBox from "@/components/ConBox.vue";
-import BaseLayout from "@/components/includes/layout/BaseLayout.vue";
 </script>
 
 <style lang="scss" scopped>

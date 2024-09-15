@@ -10,7 +10,7 @@
     </div>
 
     <footer class="footer">
-      <slot name="footer">123</slot>
+      <slot name="footer"></slot>
     </footer>
   </div>
 </template>

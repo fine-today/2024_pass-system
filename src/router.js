@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import MainContent from "./content/main/MainContent.vue";
 import GuidePage from "./content/guide/GuidePage.vue";
 import SafetyMap from "./content/myLocation/safetyMap/SafetyMap.vue";
-import HistoryInquery from "./content/myLocation/historyInquery/HistoryInquery.vue";
+import HistoryInquery from "@/content/myLocation/historyInquery/HistoryInquery.vue";
 import SafetyInsurence from "./content/myLocation/safetyInsurence/SafetyInsurence.vue";
 import MyLocation from "./content/myLocation/MyLocation.vue";
 import FamilyInquery from "./content/myLocation/familyInquery/FamilyInquery.vue";
