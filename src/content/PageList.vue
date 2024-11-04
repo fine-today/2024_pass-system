@@ -1,21 +1,37 @@
 <template>
-  <div></div>
+  <div class="conbox">
+    <table style="text-align: center" class="guide-table">
+      <colgroup>
+        <col style="width: 30%" />
+        <col />
+      </colgroup>
+      <thead>
+        <tr v-for="(page, i) in pages" :key="i">
+          <th>{{ page.title }}</th>
+          <td class="align-left">
+            <router-link :to="page.href">{{ page.href }}</router-link>
+          </td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 </template>
 
 <script setup>
-const page = [
+const pages = [
   {
     id: 1,
     title: "가이드",
     href: "/guide",
     empty: "",
   },
-  {
-    id: 2,
-    title: "메인",
-    href: "/main",
-    empty: "",
-  },
+  // {
+  //   id: 2,
+  //   title: "메인",
+  //   href: "/main",
+  //   empty: "",
+  // },
   {
     id: 3,
     title: "내위치지키미",
@@ -60,21 +76,43 @@ const page = [
   },
   {
     id: 10,
-    title: "가족위치조회-현재위치보기",
-    href: "/family-inquery/history/1",
+    title: "가족위치조회-위치조회자 등록 정보",
+    href: "/family-inquery/modify",
     empty: "",
   },
-  {
-    id: 11,
-    title: "가족위치조회-현재위치보기",
-    href: "/family-inquery/history/1",
-    empty: "",
-  },
-  {
-    id: 12,
-    title: "가족위치조회-현재위치보기",
-    href: "/family-inquery/history/1",
-    empty: "",
-  },
+  // {
+  //   id: 11,
+  //   title: "안전지도",
+  //   href: "/safety-map",
+  //   empty: "",
+  // },
+  // {
+  //   id: 12,
+  //   title: "가족위치조회-현재위치보기",
+  //   href: "/family-inquery/history/1",
+  //   empty: "",
+  // },
 ];
+console.log(pages);
 </script>
+
+<style scoped>
+.conbox {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+table.guide-table {
+  width: 100%;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  th,
+  td {
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    padding: 10px;
+  }
+  th {
+    background-color: #ddd;
+  }
+}
+</style>

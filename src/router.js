@@ -88,6 +88,11 @@ const routes = [
     path: "/guide",
     component: GuidePage,
   },
+  // {
+  //   name: "페이지리스트",
+  //   path: "/page-list",
+  //   component: PageList,
+  // },
 ];
 
 const router = createRouter({
