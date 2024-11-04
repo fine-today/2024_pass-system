@@ -1,3 +1,50 @@
 @import "./compButton.scss";
 @import "./compTag.scss";
 @import "./compModal.scss";
+@import "./compInput.scss";
+
+.warning {
+  @include title(p3);
+}
+
+.history-list {
+  @include bodySpace;
+  .history-item {
+    .history-item-inner {
+      @include flexbox;
+      justify-content: space-between;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid;
+      @include color(border-color, gray-050);
+      overflow: hidden;
+    }
+    .con {
+      padding-right: 1rem;
+      max-width: calc(100% - 8.5rem);
+      h3 {
+        @include title(p1, 500);
+        @include ellipsis;
+      }
+      .text {
+        @include title(p2);
+        @include color(color, gray-600);
+      }
+    }
+    .ant-btn {
+    }
+  }
+  .map,
+  #map {
+    position: relative;
+    height: 20rem;
+    background-color: #ddd;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.2rem;
+      height: 1.7rem;
+    }
+  }
+}

@@ -42,7 +42,7 @@ const store = createStore({
         },
         {
           id: 1,
-          title: "부정 사용 방지",
+          title: "부정 사용 방지 부정 사용 방지 부정 사용 방지",
           company: "OO 보험 주식회사",
           date: "2024.01.02 09:13",
           map: "a",
@@ -102,7 +102,7 @@ const store = createStore({
           loading: "ended",
         },
         {
-          id: 0,
+          id: 1,
           name: "홍길동2",
           nickname: "할머니",
           location: "",
@@ -147,8 +147,19 @@ const store = createStore({
     setHistoryMapOpen(state, id) {
       state.myHistory.forEach((history) => {
         if (history.id === id) {
-          console.log(history.id);
           history.mapOpen = !history.mapOpen;
+        }
+      });
+    },
+    getThisFamilyMapOpen(state, ids) {
+      const { familyId, historyId } = ids;
+      state.family.forEach((familyEl) => {
+        if (familyEl.id === parseInt(familyId)) {
+          familyEl.history.forEach((history) => {
+            if (history.id === parseInt(historyId)) {
+              history.mapOpen = !history.mapOpen;
+            }
+          });
         }
       });
     },

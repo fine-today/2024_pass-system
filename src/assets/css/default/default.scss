@@ -1,7 +1,7 @@
 html,
 body {
-  font-family: "pretendard", "NotoKr", "Malgun Gothic", "맑은 고딕", Dotum,
-    "돋움", Helvetica, AppleSDGothicNeo, sans-serif;
+  font-family: "notosans", "pretendard", "NotoKr", "Malgun Gothic", "맑은 고딕",
+    Dotum, "돋움", Helvetica, AppleSDGothicNeo, sans-serif;
   font-size: 2.7778vw;
 }
 #app {
@@ -25,7 +25,7 @@ h5,
 }
 h6,
 .h6 {
-  @include title(p1, 700);
+  @include title(p1);
 }
 .p1 {
   @include title(p1);

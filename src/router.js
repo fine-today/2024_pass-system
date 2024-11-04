@@ -9,12 +9,22 @@ import FamilyInquery from "./content/myLocation/familyInquery/FamilyInquery.vue"
 import ServiceAgree from "./content/myLocation/serviecAgree/ServiceAgree.vue";
 import ServiceAgreeComplete from "./content/myLocation/serviecAgree/ServiceAgreeComplete.vue";
 import ServicePassword from "./content/myLocation/serviecAgree/ServicePassword.vue";
+import FamilyHistory from "./content/myLocation/familyInquery/FamilyHistory.vue";
+import FamilyLocation from "./content/myLocation/familyInquery/FamilyLocation.vue";
+import FamilyModify from "./content/myLocation/familyInquery/FamilyModify.vue";
+import PageList from "./content/PageList.vue";
 
 const routes = [
   {
+    //PageList
+    name: "router",
+    path: "/",
+    component: PageList,
+  },
+  {
     //main
     name: "main",
-    path: "/",
+    path: "/main",
     component: MainContent,
   },
   {
@@ -47,6 +57,21 @@ const routes = [
     // name: "가족위치조회",
     path: "/family-inquery",
     component: FamilyInquery,
+  },
+  {
+    // name: "가족위치조회-현재위치보기",
+    path: "/family-inquery/location",
+    component: FamilyLocation,
+  },
+  {
+    // name: "가족위치조회-현재위치보기",
+    path: "/family-inquery/history/:id",
+    component: FamilyHistory,
+  },
+  {
+    // name: "가족위치조회-위치조회자 등록 정보",
+    path: "/family-inquery/modify",
+    component: FamilyModify,
   },
   {
     // name: "안전지도",

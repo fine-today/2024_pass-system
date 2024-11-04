@@ -1,3 +1,38 @@
-.ant-modal .ant-modal-content {
-  padding: 0;
+.ant-modal-root .ant-modal-centered .ant-modal {
+  width: calc(100% - 5.2rem) !important;
+}
+.ant-modal {
+  @include fontFamily;
+  .ant-modal-content {
+    padding: 0;
+    border-radius: 1.6rem;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .ant-modal-header {
+    border-radius: 1.6rem 1.6rem 0 0;
+    margin-bottom: 1.6rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .ant-modal-close {
+    display: none;
+  }
+  .ant-modal-title {
+    @include title(p1, 500);
+  }
+  .ant-modal-body {
+    padding: 0 2rem 2rem 2rem;
+    overflow: auto;
+  }
+  .ant-modal-footer {
+    margin-top: 1.2rem;
+    padding-bottom: 2rem;
+    .btn-list {
+      padding-bottom: 0;
+    }
+  }
 }

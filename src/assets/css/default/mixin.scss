@@ -158,3 +158,10 @@ $colors: (
 section {
   @include color(background-color, black);
 }
+
+@mixin fontFamily($font: notosans) {
+  @if ($font == notosans) {
+    font-family: "notosans", "pretendard", "NotoKr", "Malgun Gothic",
+      "맑은 고딕", Dotum, "돋움", Helvetica, AppleSDGothicNeo, sans-serif;
+  }
+}
